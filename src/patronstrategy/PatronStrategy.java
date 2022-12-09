@@ -1,18 +1,20 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-
-package com.mycompany.strategy;
+package patronstrategy;
 
 /**
  *
  * @author dvera
  */
-public class Strategy {
+public class PatronStrategy {
 
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
-        AvionComercial avionComercial=new AvionComercial();
+                AvionComercial avionComercial=new AvionComercial();
         AvionRapido avionRapido=new AvionRapido();
         
         System.out.println("Primero el avion comercial...");
@@ -31,4 +33,5 @@ public class Strategy {
         avionComercial.setAlgoritmo(new EnAireVeloz());
         avionComercial.mover();
     }
+    
 }

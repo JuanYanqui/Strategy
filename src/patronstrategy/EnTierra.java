@@ -2,19 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.strategy;
+package patronstrategy;
 
 /**
  *
  * @author dvera
  */
-public abstract class Avion {
-    private Algoritmo miAlgoritmo;
+public class EnTierra implements Algoritmo{
 
-    public void setAlgoritmo(Algoritmo a){
-        this.miAlgoritmo=a;
+    @Override
+    public void moverse() {
+        System.out.println("Moviendo sobre ruedas");
     }
-    public void mover(){
-        this.miAlgoritmo.moverse();
-    }
+    
 }
